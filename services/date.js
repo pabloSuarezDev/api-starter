@@ -1,8 +1,8 @@
 
-// Crear una nueva fecha
+// Create a new date
 const fecha = new Date();
 
-// Obtener la fecha en formato ISO y ajustar el formato
+// Get date like sql CURDATE() function
 const fechaSQL = fecha.toISOString().slice(0, 19).replace('T', ' ');
 
 module.exports = fechaSQL;
